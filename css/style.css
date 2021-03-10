@@ -1,0 +1,216 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #1b1a1a;
+  min-height: 100vh;
+  color: white;
+}
+
+.slideContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.slideContainer li {
+  list-style-type: none;
+}
+
+.slideContainer li img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.titleContainer {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
+  text-align: center;
+}
+
+.titleContainer margin {
+  left: 30vw;
+  right: 30vw;
+}
+
+.textName {
+  width: 250px;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto;
+}
+
+.textInfo {
+  position: relative;
+  width: 400px;
+  font-size: 25px;
+  color: white;
+  margin: 0 auto;
+  -webkit-animation: fader 5s infinite;
+          animation: fader 5s infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-transition: 4s;
+  transition: 4s;
+}
+
+@-webkit-keyframes fader {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  30% {
+    opacity: 0;
+    left: -50vw;
+  }
+  31% {
+    opacity: 0;
+    left: 50vw;
+  }
+  65% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fader {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  30% {
+    opacity: 0;
+    left: -50vw;
+  }
+  31% {
+    opacity: 0;
+    left: 50vw;
+  }
+  65% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.linkSkills {
+  width: 100px;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.linkSkills:hover {
+  color: #12aa12;
+}
+
+.t1 {
+  left: 145vw;
+  color: white;
+}
+
+.t2 {
+  left: 245vw;
+  color: white;
+}
+
+.t3 {
+  left: 345vw;
+  color: white;
+}
+
+.t4 {
+  left: 445vw;
+  color: white;
+}
+
+.t5 {
+  left: 545vw;
+  color: white;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.skills .progress .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #353535;
+}
+
+.skills .progress-bar {
+  height: 10px;
+  -webkit-transition: .9s;
+  transition: .9s;
+  background: -webkit-gradient(linear, left top, right top, from(#03cc03), color-stop(#03cc03), color-stop(#03cc03), color-stop(#03cc03), color-stop(#03cc03), to(#353535));
+  background: linear-gradient(to right, #03cc03, #03cc03, #03cc03, #03cc03, #03cc03, #353535);
+}
+
+h1 {
+  text-align: center;
+}
+
+.slideContainer {
+  width: 600%;
+  height: 100vh;
+  background: black;
+}
+
+.clickyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#slider {
+  width: 720px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#slider .slides {
+  display: block;
+  width: 6000px;
+  height: 400px;
+}
+
+#slider .slide {
+  float: left;
+  width: 720px;
+  list-style-type: none;
+  height: 400px;
+}
