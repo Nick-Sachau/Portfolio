@@ -1,0 +1,14 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  min-height: 200vh;
+  background-image: url(../Images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=style.css.map */
