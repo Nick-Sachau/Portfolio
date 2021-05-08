@@ -5,8 +5,60 @@
 }
 
 #root {
-    min-height: 200vh;
-    background-image: url(../Images/background.png);
+    min-height: 100vh;
+    background: linear-gradient(to top left, #000000, #1e1329, #4b0b83);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    .sidenav {
+        position: sticky;
+        top: 30vh;
+
+        ul {
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            list-style-type: none;
+            line-height: 3rem;
+
+            li {
+                background-color: #55049b;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                transition: .3s;
+                overflow: hidden;
+                white-space: nowrap;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    svg {
+                        vertical-align: middle;
+                        text-align: right;
+                    }
+    
+                    span {
+                        font-size: 1rem;
+                        display: none;
+                        text-align: right;
+                    }
+                }
+
+                &:hover {
+                    width: 110px;
+                    border-radius: 40px;
+                    background-color: #6b06c4;
+
+                    a {
+                        span {
+                            display: inline;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
