@@ -12,48 +12,32 @@ const SideNavigation = () => {
     const [isActiveContact, setIsActiveContact] = useState(false)
 
     const setActive = (clicked) => {
-        if(clicked === 'home') {
-            setIsActiveHome(true)
-            setIsActiveAbout(false)
-            setIsActiveContact(false)
-            setIsActivePortfolio(false)
-            setIsActiveResume(false)
-            setIsActiveServices(false)
-        }else if(clicked === 'about') {
-            setIsActiveHome(false)
-            setIsActiveAbout(true)
-            setIsActiveContact(false)
-            setIsActivePortfolio(false)
-            setIsActiveResume(false)
-            setIsActiveServices(false)
-        }else if(clicked === 'resume') {
-            setIsActiveHome(false)
-            setIsActiveAbout(false)
-            setIsActiveContact(false)
-            setIsActivePortfolio(false)
-            setIsActiveResume(true)
-            setIsActiveServices(false)
-        }else if(clicked === 'portfolio') {
-            setIsActiveHome(false)
-            setIsActiveAbout(false)
-            setIsActiveContact(false)
-            setIsActivePortfolio(true)
-            setIsActiveResume(false)
-            setIsActiveServices(false)
-        }else if(clicked === 'services') {
-            setIsActiveHome(false)
-            setIsActiveAbout(false)
-            setIsActiveContact(false)
-            setIsActivePortfolio(false)
-            setIsActiveResume(false)
-            setIsActiveServices(true)
-        }else if(clicked === 'contact') {
-            setIsActiveHome(false)
-            setIsActiveAbout(false)
-            setIsActiveContact(true)
-            setIsActivePortfolio(false)
-            setIsActiveResume(false)
-            setIsActiveServices(false)
+        setIsActiveHome(false)
+        setIsActiveAbout(false)
+        setIsActiveContact(false)
+        setIsActivePortfolio(false)
+        setIsActiveResume(false)
+        setIsActiveServices(false)
+
+        switch (clicked) {
+            case "home":
+                setIsActiveHome(true)
+                break;
+            case "about":
+                setIsActiveAbout(true)
+                break;
+            case "resume":
+                setIsActiveResume(true)
+                break;
+            case "portfolio":
+                setIsActivePortfolio(true)
+                break;
+            case "services":
+                setIsActiveServices(true)
+                break;
+            case "contact":
+                setIsActiveContact(true)
+                break;
         }
     }
 

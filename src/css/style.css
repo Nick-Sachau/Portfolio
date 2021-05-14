@@ -16,10 +16,30 @@ html body {
   background-attachment: fixed;
 }
 
+#root #home {
+  text-align: left;
+  width: 60vw;
+  margin-left: 30vw;
+  margin-top: 20vh;
+}
+
+#root #home p {
+  font-size: 1.3rem;
+  width: 40vw;
+}
+
+#root #home p .typed {
+  color: #2281ee;
+}
+
+#root #home p .typed-cursor {
+  color: #2281ee;
+  width: 10px;
+}
+
 #root .sidenav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30vh;
+  position: fixed;
+  top: 15vh;
   z-index: 0;
   width: 10%;
 }
@@ -55,11 +75,13 @@ html body {
 #root .sidenav ul li a svg {
   vertical-align: middle;
   text-align: right;
+  margin-right: 20%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 #root .sidenav ul li a span {
   font-size: 1rem;
-  display: none;
   text-align: right;
 }
 
@@ -69,11 +91,10 @@ html body {
   background-color: #6b06c4;
 }
 
-#root .sidenav ul li:hover a span {
-  display: inline;
+#root .sidenav ul li:hover a svg {
+  margin-right: 0;
 }
 
 #root .sidenav ul li.active {
   background-color: #6b06c4;
 }
-/*# sourceMappingURL=style.css.map */

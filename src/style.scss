@@ -20,9 +20,36 @@ html{
 
 #root {
 
+    #home {
+        text-align: left;
+        width: 60vw;
+        margin-left: 30vw;
+        margin-top: 20vh;
+
+        h1 {
+            
+        }
+
+        p {
+            font-size: 1.3rem;
+            width: 40vw;
+
+            .typed {
+                color: rgb(34, 129, 238);
+            }
+
+            .typed-cursor {
+                color: rgb(34, 129, 238);
+                width: 10px;
+            }
+        }
+
+        
+    }
+
     .sidenav {
-        position: sticky;
-        top: 30vh;
+        position: fixed ;
+        top: 15vh;
         z-index: 0;
         width: 10%;
 
@@ -51,11 +78,12 @@ html{
                     svg {
                         vertical-align: middle;
                         text-align: right;
+                        margin-right: 20%;
+                        transition: .5s;
                     }
     
                     span {
                         font-size: 1rem;
-                        display: none;
                         text-align: right;
                     }
                 }
@@ -68,8 +96,8 @@ html{
                     a {
 
 
-                        span {
-                            display: inline;
+                        svg {
+                            margin-right: 0;
                         }
                     }
                     
