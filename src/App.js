@@ -1,16 +1,14 @@
 import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SideNavigation from './Components/SideNavigation';
+import Home from './Components/Home'
+import React, { useState } from 'react'
 
 function App() {
+
   return (
     <>
-      <div id='home'>
-        <h1>Nick Sachau</h1>
-        <p>
-          I'm <span className="typed">Developer</span> <span className="typed-cursor blink">|</span>
-        </p>
-      </div>
+      <Home/>
       <SideNavigation />
     </>
   );

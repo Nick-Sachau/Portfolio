@@ -18,6 +18,20 @@ html{
     }
 }
 
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 #root {
 
     #home {
@@ -25,10 +39,6 @@ html{
         width: 60vw;
         margin-left: 30vw;
         margin-top: 20vh;
-
-        h1 {
-            
-        }
 
         p {
             font-size: 1.3rem;
@@ -41,6 +51,10 @@ html{
             .typed-cursor {
                 color: rgb(34, 129, 238);
                 width: 10px;
+            }
+
+            .blink {
+                animation: blinkCursor 0.7s infinite;
             }
         }
 
