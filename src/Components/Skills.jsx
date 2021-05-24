@@ -47,6 +47,7 @@ const Skills = () => {
                             <div className="react progress"></div>
                         </div>
                     </div>
+                    {/* test */}
                     <div className="container">
                         <div className="labels">
                             <p className="title">BootStrap</p>
