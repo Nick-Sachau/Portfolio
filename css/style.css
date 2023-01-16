@@ -1,0 +1,226 @@
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* used for variables */
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(96, 0, 155), rgb(20, 20, 20));
+  padding-left: 5em;
+}
+
+/* Custom section title underline style */
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: rgb(100, 0, 200);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* sidenav styles */
+
+header {
+  height: 100vh;
+  width: 10vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+header .sideNav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  z-index: 100000;
+}
+
+
+header .sideNav ul {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 3em;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0;
+  padding: .5em;
+}
+
+header .sideNav ul li {
+  display: flex;
+  text-align: center;
+  padding-left: .5em;
+  background-color: rgb(100, 0, 200);
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  transition: .3s;
+  margin-bottom: .5em;
+}
+
+
+header .sideNav ul li:hover {
+  width: 4.3em;
+}
+
+header .sideNav ul li span {
+  font-size: .65em;
+  color: rgba(255, 255, 255, .0);
+  width: 0;
+  margin: auto;
+  margin-top: .5em;
+  transition: .3s;
+}
+
+header .sideNav ul li:hover span {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+main {
+  min-height: 100vh;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+/* Landing styles */
+main section.landing {
+  background-image: url(../images/39246_SA14.png);
+  transform: scaleX(-1);
+  height: 100vh;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main section.landing .wrapper {
+  transform: scaleX(-1);
+  font-size: 2.5em;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+
+main section.landing .wrapper h1 {
+  font-size: 2.5em;
+}
+
+main section.transparent {
+  background: rgba(96, 0, 155, .4);
+  position: absolute;
+  height: 100vh;
+  width: 99vw;
+  top: 0;
+  right: 0;
+}
+
+main section.aboutMe {
+  margin-top: 2em;
+}
+
+main section.aboutMe .infoWrapper ul{
+  list-style-type: "> ";
+}
+
+main section.facts .container .row {
+  display: flex;
+}
+
+main section.facts .container .row .col {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+}
+
+main section.facts .container .row .col .number {
+  color: rgb(140, 0, 215);
+  font-size: 1.5em;
+}
+
+main section.skills .container .row {
+  text-align: left;
+}
+
+main section.skills .container .row .progress {
+  display: block;
+  height: 60px;
+  background: none;
+}
+
+main section.skills .container .row .progress .skill {
+  display: block;
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+main section.skills .container .row .progress .skill .value {
+  float: right;
+  font-style: normal;
+}
+
+main section.skills .container .row .progress .progress-bar-bg {
+  background: rgb(255, 255, 255);
+}
+
+main section.skills .container .row .progress .progress-bar {
+  height: 10px;
+  background-color: rgb(128, 0, 255);
+}
+
+main section.resume {
+
+}
+
+main section.projects {
+
+}
+
+main section.contact {
+  
+}
+
+footer {
+  color: rgb(255, 255, 255);
+}

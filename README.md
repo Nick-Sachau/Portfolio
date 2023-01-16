@@ -1,1 +1,0 @@
-# When you pull files make sure that you do npm install to get all the node modules
