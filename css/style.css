@@ -98,6 +98,11 @@ header .sideNav ul li a {
   width: 100%;
   height: 100%;
   margin-top: .1em;
+  transition: .3s;
+}
+
+header .sideNav ul li:hover a {
+  text-align: left;
 }
 
 
