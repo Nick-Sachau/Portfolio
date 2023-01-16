@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* used for variables */
-}
-
 body {
   min-height: 100vh;
   background-image: linear-gradient(rgb(96, 0, 155), rgb(20, 20, 20));
@@ -52,7 +48,6 @@ body {
 }
 
 /* sidenav styles */
-
 header {
   height: 100vh;
   width: 10vw;
@@ -88,7 +83,6 @@ header .sideNav ul {
 header .sideNav ul li {
   display: flex;
   text-align: center;
-  padding-left: .5em;
   background-color: rgb(100, 0, 200);
   height: 2em;
   width: 2em;
@@ -97,18 +91,28 @@ header .sideNav ul li {
   margin-bottom: .5em;
 }
 
+header .sideNav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: .1em;
+}
+
 
 header .sideNav ul li:hover {
-  width: 4.3em;
+  width: 4.5em;
+  padding-left: .5em;
 }
 
 header .sideNav ul li span {
   font-size: .65em;
   color: rgba(255, 255, 255, .0);
   width: 0;
-  margin: auto;
-  margin-top: .5em;
   transition: .3s;
+  padding-left: .5em;
+  
 }
 
 header .sideNav ul li:hover span {
@@ -159,6 +163,10 @@ main section.aboutMe {
 
 main section.aboutMe .infoWrapper ul{
   list-style-type: "> ";
+}
+
+main section.aboutMe .infoWrapper .row ul li a {
+  color: rgb(140, 0, 215);
 }
 
 main section.facts .container .row {
